@@ -10,15 +10,14 @@ export default function Layout(props) {
     <div className={[cssVars.root, styles.root].join(" ")}>
       <Head {...props} />
       <header className={styles.header}>
-        <Link to="/">gatsby-starter-landing-page</Link>
+        <Link to="/">Camist</Link>
       </header>
       <main className={styles.main}>{props.children}</main>
       <footer className={styles.footer}>
         <a href="https://gatsbyjs.com">Built with Gatsby</a>
-        <a href="https://github.com/gatsbyjs/gatsby-starter-landing-page">
-          View Source on GitHub
+        <a href="https://gouldsonium.com">
+          Website by Gouldsonium
         </a>
-        <Link to="/demo">Demo</Link>
       </footer>
     </div>
   );

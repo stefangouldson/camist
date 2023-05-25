@@ -24,9 +24,8 @@ if (!spaceId || !accessToken) {
 // starter config
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Starter Landing Page",
-    description:
-      "Create custom landing pages using Gatsby and Contentful with this Gatsby Starter",
+    title: "Camist",
+    description: "Elevate Your Brand with Expert Videography offering: EDITING, SOCIAL MEDIA, DOCUMENTARIES, MUSIC VIDEOS, VIDEO PRODUCTION",
   },
   plugins: [
     {

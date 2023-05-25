@@ -8,6 +8,7 @@ import Section from "../components/section";
 import Heading from "../components/heading";
 
 export default function Benefits({ heading, secondaryHeading, content }) {
+  console.log(content)
   return (
     <Section>
       <Heading center>{heading}</Heading>
@@ -15,7 +16,7 @@ export default function Benefits({ heading, secondaryHeading, content }) {
         {secondaryHeading}
       </Heading>
       <div className={styles.content}>
-        {content.map((item) => (
+        {!!content && content.map((item) => (
           <BenefitContent key={item.id} {...item} />
         ))}
       </div>

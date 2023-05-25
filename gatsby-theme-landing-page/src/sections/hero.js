@@ -23,7 +23,7 @@ export default function Hero({ heading, secondaryHeading, content }) {
           <HeroContent {...heroContent} />
         </div>
         <div className={styles.image}>
-          <GatsbyImage image={image} alt={image.title || `Hero Image`} />
+          <GatsbyImage image={image} alt={`Hero Image`} />
         </div>
       </div>
     </Section>
@@ -36,7 +36,7 @@ function HeroContent({ primaryText, secondaryText, links }) {
       <MarkdownText {...primaryText} />
       <MarkdownText {...secondaryText} />
       <div className={styles.buttonContainer}>
-        {links.map((link, i) => (
+        {!!links && links.map((link, i) => (
           <Button
             key={link.id}
             {...link}
