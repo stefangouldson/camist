@@ -25,9 +25,14 @@ if (!spaceId || !accessToken) {
 module.exports = {
   siteMetadata: {
     title: "Camist",
-    description: "Elevate Your Brand with Expert Videography offering: EDITING, SOCIAL MEDIA, DOCUMENTARIES, MUSIC VIDEOS, VIDEO PRODUCTION",
+    description:
+      "Elevate Your Brand with Expert Videography offering: EDITING, SOCIAL MEDIA, DOCUMENTARIES, MUSIC VIDEOS, VIDEO PRODUCTION",
+    siteUrl: `https://camist.co.uk`,
   },
   plugins: [
+    {
+      resolve: "gatsby-plugin-sitemap",
+    },
     {
       resolve: `gatsby-theme-landing-page`,
       options: contentfulConfig,
